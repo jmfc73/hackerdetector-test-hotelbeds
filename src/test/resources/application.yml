@@ -1,0 +1,41 @@
+springdoc:
+  api-docs:
+    path: /openapi
+  swagger-ui:
+    path: /swagger-ui
+  
+server:
+      port: 8080
+      servlet:
+        context-path: '/@artifactId@'
+
+spring:
+
+  profiles: 
+        active: local
+       
+  application:
+        name: hackerdetector-test-hotelbeds
+        
+management:
+    endpoints:
+    web:
+      base-path: /q/
+      path-mapping:
+        metrics: metrics-json
+        prometheus: metrics              
+      exposure:
+        include:
+        - health
+        - info
+        - metrics
+        - loggers
+        - env
+        - scheduledtasks
+        - caches
+        - prometheus
+        - flyway
+              
+signIn:
+  maxAttempts: 5
+  minutesToReview: 5
