@@ -26,10 +26,5 @@ public class LogLineParser{
                 .status(SigninState.getSigninState(strings[2]))
                 .build();
 
-    }
-    
-    
-
-
-    
+    }    
 }

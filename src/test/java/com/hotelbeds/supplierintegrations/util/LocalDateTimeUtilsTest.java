@@ -22,8 +22,4 @@ class LocalDateTimeUtilsTest {
         assertEquals(5, result);        
         
     }
-
-    
-    
-
 }

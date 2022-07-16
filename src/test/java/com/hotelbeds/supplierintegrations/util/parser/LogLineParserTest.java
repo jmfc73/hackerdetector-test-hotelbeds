@@ -51,8 +51,4 @@ class LogLineParserTest {
         verify(localDateTimeUtils, times(1)).toLocalDateTime(Mockito.anyLong());
         
     }
-
-    
-    
-
 }

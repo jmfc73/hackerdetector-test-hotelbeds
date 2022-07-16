@@ -79,7 +79,4 @@ class HackerDetectorBusinessImplTest {
         verify(infoSigninService, times(1)).isMaxAttemptsSigninExceeded(Mockito.any(LogLine.class));
         
     }
-
-	
-
 }
